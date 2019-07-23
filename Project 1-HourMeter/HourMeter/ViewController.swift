@@ -26,6 +26,7 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
         // Do any additional setup after loading the view.
         self.tapResetButton.isEnabled = false
         
+        // vinte
         let initCornerButton : (UIButton) -> Void = { button in
             // button.backgroundColor = UIColor.blue
         }
@@ -62,6 +63,7 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
              // update
              laps.append(tapLabel.text!)
              */
+            // vinte
             if let timerLabelText = tapLabel.text {
                 laps.append(timerLabelText)
             }
@@ -147,6 +149,7 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
         let identifier: String = "lapCell"
         let cell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: identifier, for: indexPath)
         
+        // vinte
         if let labelNum = cell.viewWithTag(11) as? UILabel {
             labelNum.text = "Lap \(laps.count - (indexPath as NSIndexPath).row)"
         }

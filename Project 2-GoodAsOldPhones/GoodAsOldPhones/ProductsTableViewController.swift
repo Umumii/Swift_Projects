@@ -48,6 +48,7 @@ class ProductsTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: identifer, for: indexPath)
 
+        // vinte
         guard let products = products else { return cell }
         cell.textLabel?.text = products[indexPath.row].name
         if let imageName = products[indexPath.row].cellImageName {
@@ -96,6 +97,7 @@ class ProductsTableViewController: UITableViewController {
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
+    // vinte
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
