@@ -8,20 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		594BB5E422E69C800083A3D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594BB5E322E69C800083A3D2 /* AppDelegate.swift */; };
-		594BB5E622E69C800083A3D2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594BB5E522E69C800083A3D2 /* ViewController.swift */; };
 		594BB5E922E69C810083A3D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 594BB5E722E69C810083A3D2 /* Main.storyboard */; };
 		594BB5EB22E69C820083A3D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 594BB5EA22E69C820083A3D2 /* Assets.xcassets */; };
 		594BB5EE22E69C820083A3D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 594BB5EC22E69C820083A3D2 /* LaunchScreen.storyboard */; };
+		59E311AD22E6D3B4003E6D9F /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E311AC22E6D3B4003E6D9F /* BaseViewController.swift */; };
+		59E311AF22E6D3FB003E6D9F /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E311AE22E6D3FB003E6D9F /* MineViewController.swift */; };
+		59E311B122E6D40F003E6D9F /* MineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E311B022E6D40F003E6D9F /* MineTableViewCell.swift */; };
+		59E311B322E6D42E003E6D9F /* MineUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E311B222E6D42E003E6D9F /* MineUserModel.swift */; };
+		59E311B522E6D820003E6D9F /* Spaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E311B422E6D820003E6D9F /* Spaces.swift */; };
+		59E311B722E6D84C003E6D9F /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E311B622E6D84C003E6D9F /* UIColor+Extension.swift */; };
+		59E311B922E6DCB3003E6D9F /* TableKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E311B822E6DCB3003E6D9F /* TableKeys.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		594BB5E022E69C800083A3D2 /* FacebookMine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FacebookMine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		594BB5E322E69C800083A3D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		594BB5E522E69C800083A3D2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		594BB5E822E69C810083A3D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		594BB5EA22E69C820083A3D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		594BB5ED22E69C820083A3D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		594BB5EF22E69C820083A3D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		59E311AC22E6D3B4003E6D9F /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		59E311AE22E6D3FB003E6D9F /* MineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
+		59E311B022E6D40F003E6D9F /* MineTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineTableViewCell.swift; sourceTree = "<group>"; };
+		59E311B222E6D42E003E6D9F /* MineUserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineUserModel.swift; sourceTree = "<group>"; };
+		59E311B422E6D820003E6D9F /* Spaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spaces.swift; sourceTree = "<group>"; };
+		59E311B622E6D84C003E6D9F /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		59E311B822E6DCB3003E6D9F /* TableKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableKeys.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +67,51 @@
 			isa = PBXGroup;
 			children = (
 				594BB5E322E69C800083A3D2 /* AppDelegate.swift */,
-				594BB5E522E69C800083A3D2 /* ViewController.swift */,
+				59E311AB22E6D396003E6D9F /* Tool */,
+				59E311AA22E6D38C003E6D9F /* View */,
+				59E311A922E6D384003E6D9F /* ViewController */,
+				59E311A822E6D37F003E6D9F /* Model */,
 				594BB5E722E69C810083A3D2 /* Main.storyboard */,
 				594BB5EA22E69C820083A3D2 /* Assets.xcassets */,
 				594BB5EC22E69C820083A3D2 /* LaunchScreen.storyboard */,
 				594BB5EF22E69C820083A3D2 /* Info.plist */,
 			);
 			path = FacebookMine;
+			sourceTree = "<group>";
+		};
+		59E311A822E6D37F003E6D9F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				59E311B222E6D42E003E6D9F /* MineUserModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		59E311A922E6D384003E6D9F /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				59E311AC22E6D3B4003E6D9F /* BaseViewController.swift */,
+				59E311AE22E6D3FB003E6D9F /* MineViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		59E311AA22E6D38C003E6D9F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				59E311B022E6D40F003E6D9F /* MineTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		59E311AB22E6D396003E6D9F /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				59E311B422E6D820003E6D9F /* Spaces.swift */,
+				59E311B622E6D84C003E6D9F /* UIColor+Extension.swift */,
+				59E311B822E6DCB3003E6D9F /* TableKeys.swift */,
+			);
+			path = Tool;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +185,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				594BB5E622E69C800083A3D2 /* ViewController.swift in Sources */,
+				59E311B522E6D820003E6D9F /* Spaces.swift in Sources */,
 				594BB5E422E69C800083A3D2 /* AppDelegate.swift in Sources */,
+				59E311AD22E6D3B4003E6D9F /* BaseViewController.swift in Sources */,
+				59E311AF22E6D3FB003E6D9F /* MineViewController.swift in Sources */,
+				59E311B122E6D40F003E6D9F /* MineTableViewCell.swift in Sources */,
+				59E311B322E6D42E003E6D9F /* MineUserModel.swift in Sources */,
+				59E311B922E6DCB3003E6D9F /* TableKeys.swift in Sources */,
+				59E311B722E6D84C003E6D9F /* UIColor+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
