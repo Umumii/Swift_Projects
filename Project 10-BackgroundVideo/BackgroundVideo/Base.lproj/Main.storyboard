@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BackgroundVideo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3ci-aq-aBi"/>
+                        <viewControllerLayoutGuide type="bottom" id="WP0-oW-g89"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3km-z4-lZZ">
+                                <rect key="frame" x="50" y="797" width="314" height="45"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="sbc-OW-aJb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="16"/>
+                                <state key="normal" title="Sig up">
+                                    <color key="titleColor" red="0.090196078431372548" green="0.68235294117647061" blue="0.011764705882352941" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login-secondary-logo" translatesAutoresizingMaskIntoConstraints="NO" id="O8g-c1-Afb">
+                                <rect key="frame" x="98" y="124" width="218" height="66"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TqP-pa-Rc8">
+                                <rect key="frame" x="50" y="732" width="314" height="45"/>
+                                <color key="backgroundColor" red="0.090196078431372548" green="0.68235294117647061" blue="0.011764705882352941" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="qHe-gR-HdS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="16"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.12941176469999999" green="0.0" blue="0.44705882349999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="TqP-pa-Rc8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="30" id="1fe-bu-Y3v"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="TqP-pa-Rc8" secondAttribute="trailing" constant="30" id="2M2-Jt-UNr"/>
+                            <constraint firstItem="O8g-c1-Afb" firstAttribute="top" secondItem="3ci-aq-aBi" secondAttribute="bottom" constant="80" id="3zG-Hi-wDV"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3km-z4-lZZ" secondAttribute="trailing" constant="30" id="5Dk-Ps-4sC"/>
+                            <constraint firstItem="3km-z4-lZZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="30" id="NcH-OF-4B6"/>
+                            <constraint firstItem="3km-z4-lZZ" firstAttribute="top" secondItem="TqP-pa-Rc8" secondAttribute="bottom" constant="20" id="RhY-pD-Tf0"/>
+                            <constraint firstItem="WP0-oW-g89" firstAttribute="top" secondItem="3km-z4-lZZ" secondAttribute="bottom" constant="20" id="bhJ-fC-KZf"/>
+                            <constraint firstItem="O8g-c1-Afb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hIM-be-n0V"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="loginButton" destination="TqP-pa-Rc8" id="xO6-g7-sYk"/>
+                        <outlet property="sigupButton" destination="3km-z4-lZZ" id="rPX-jS-3iV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="47.826086956521742" y="20.758928571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="login-secondary-logo" width="218" height="66"/>
+    </resources>
+</document>
